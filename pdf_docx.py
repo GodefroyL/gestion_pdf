@@ -1,6 +1,6 @@
 from pdf2docx import Converter
 
-def conversstion_pdf_docx(fichier: str) -> None:
+def convertion_pdf_docx(fichier: str) -> None:
     """
     Fonction pour convertir des fichiers pdf en docx
 
@@ -19,7 +19,7 @@ if __name__=='__main__':
     while oui:
         fichier = fd.askopenfilename(defaultextension='.pdf', filetypes=[('Fichiers PDF', '*.pdf')], title='Sélectionner un fichier PDF')
         try:
-            conversstion_pdf_docx(fichier)
+            convertion_pdf_docx(fichier)
             print('Conversion terminée. Votre fichier se trouve au même endroit que le fichier PDF d\'origine.')
             continuer = input('Voulez-vous convertir un autre fichier ? [oui/non]')
             if continuer != 'oui':
