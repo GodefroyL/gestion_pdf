@@ -1,7 +1,7 @@
 from tkinter import filedialog as fd
 
 from pdf_docx import convertion_pdf_docx
-from compression_pdf import compression_pdf, compression_pdf_
+from compression_pdf import compression_pdf, compression_pdf
 
 def main():
     oui = True
@@ -14,7 +14,7 @@ def main():
                 case '1':
                     convertion_pdf_docx(fichier)
                 case '2':
-                    compression_pdf_(fichier)
+                    compression_pdf(fichier)
             print('Traitement terminé. Votre fichier se trouve au même endroit que le fichier PDF d\'origine.')
             continuer = input('Voulez-vous traiter un autre fichier ? [oui/non]')
             if continuer != 'oui':
