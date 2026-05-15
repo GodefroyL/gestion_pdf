@@ -1,7 +1,7 @@
 from tkinter import filedialog as fd
 
 from pdf_docx import convertion_pdf_docx
-from compression_pdf import compression_pdf, compression_pdf
+from compression_pdf import compression_pdf
 
 def main():
     oui = True
