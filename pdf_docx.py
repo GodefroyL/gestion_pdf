@@ -1,4 +1,4 @@
-from pdf2docx import Converter
+from pdf2docx import Converter # type: ignore
 
 def convertion_pdf_docx(fichier: str) -> None:
     """
