@@ -19,6 +19,9 @@ def main():
                 case '3':
                     oui = False
                     continue
+                case _:
+                    print('Choix invalide. Veuillez entrer un numéro valide.')
+                    continue
             print('Traitement terminé. Votre fichier se trouve au même endroit que le fichier PDF d\'origine.')
         except Exception as e:
             print(f'Erreur dans la conversion ou la compression de ce fichier. {str(e)}')
